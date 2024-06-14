@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Teste Gemini</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+        h1 {
+            margin-top: 50px;
+            color: #333;
+        }
+        form {
+            margin-top: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+        input[type="text"] {
+            padding: 5px;
+            width: 200px;
+        }
+        input[type="submit"] {
+            padding: 5px 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        .response {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #d4edda;
+            border: 1px solid #c3e6cb;
+            color: #155724;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste Gemini</h1>
+    <form action="/" method="post">
+        <label for="prompt">Digite sua pergunta:</label><br>
+        <input type="text" id="prompt" name="prompt"><br>
+        <input type="submit" value="Enviar">
+    </form>
+    {% if prompt %}
+    <div class="response">
+        <h2>Sua pergunta:</h2>
+        <p>{{ prompt }}</p>
+        <h2>Resposta do Gemini:</h2>
+        <p><pre>{{ response }}</pre></p>
+    </div>
+    {% endif %}
+</body>
+</html>
