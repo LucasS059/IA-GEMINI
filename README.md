@@ -1,3 +1,19 @@
+# IA - GEMINI 
+### USANDO O COLAB
+Caso queriam testar o chatbot sem usar a interface web apenas baixe o arquivo IA-GEMINI.ipynb que está localizado na pasta ChatbotColab e abra no google colab, feito isso basta colocar a chave da api. O passo a passo para pegar a chave da api está a baixo. 
+
+### USANDO A INTERFACE WEB. 
+Baixe o arquivo "chat_gemini.py" e a "pasta templates" que contém o arquivo "index.html" 
+
+1 - Abra o terminal e de os seguintes imports 
+ - pip install google-generativeai
+ - pip install Flask
+
+2 - Entre no arquivo "chat_gemini.py" e coloque sua chave api. 
+
+3 - Abra o terminal e de o comando "python chat_gemini.py", feito isso irá dar o localhost e a porta basta copiar e colar no seu navegador. 
+
+
 ## Acessar chave da api do gemini 
 
 1 - acessar esse link https://aistudio.google.com/app/prompts/new_chat?utm_source=ai.google.dev&utm_medium=referral&utm_campaign=log_in&pli=1
