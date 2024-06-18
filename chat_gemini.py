@@ -1,9 +1,14 @@
 import google.generativeai as genai
 from flask import Flask, render_template, request
+import os
+from dotenv import load_dotenv
+
+load_dotenv()  # Carrega as variáveis de ambiente do arquivo .env
 
 app = Flask(__name__)
 
-GOOGLE_GEMINI_API_KEY = "CHAVE API"
+GOOGLE_GEMINI_API_KEY = os.getenv("GOOGLE_GEMINI_API_KEY") # Criar um arquivo .env dentro do diretório raiz e configurar com esse codigo "GOOGLE_GEMINI_API_KEY= CHAVE DA API AQUI"
+
 
 genai.configure(api_key=GOOGLE_GEMINI_API_KEY)
 model = genai.GenerativeModel("gemini-1.5-pro-latest")
