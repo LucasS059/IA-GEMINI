@@ -50,6 +50,8 @@ Para acessar a chave da API do Gemini, siga os passos abaixo:
 4. Clique na opção azul para confirmar.
    ![image](https://github.com/LucasS059/IA-GEMINI/assets/133230032/bb6d152b-a2a8-4a04-b26b-a4e41e404cd8)
 5. Copie a chave gerada e substitua no código.
+
+   
    ![image](https://github.com/user-attachments/assets/613acca1-98f9-447d-87a1-4d26126c1b82)
 
 ---
