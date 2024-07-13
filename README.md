@@ -24,9 +24,12 @@ Para usar o chatbot com a interface web, siga estes passos:
 1. Baixe o arquivo `chat_gemini.py` e a pasta `templates` que contém o arquivo `index.html`.
 2. No terminal, instale as dependências necessárias:
    ```sh
-   pip install google-generativeai Flask
+   pip install google-generativeai Flask python-dotenv
    ```
-3. Abra o arquivo `chat_gemini.py` e insira sua chave da API.
+3. Crie um arquivo `.env` na raiz do seu projeto e adicione a chave da API nele:
+   ```
+   GEMINI_API_KEY=sua_chave_aqui
+   ```
 4. No terminal, execute o seguinte comando:
    ```sh
    python chat_gemini.py
@@ -46,8 +49,8 @@ Para acessar a chave da API do Gemini, siga os passos abaixo:
    ![image](https://github.com/LucasS059/IA-GEMINI/assets/133230032/262159e7-06e3-4326-a955-d57d464ea19e)
 4. Clique na opção azul para confirmar.
    ![image](https://github.com/LucasS059/IA-GEMINI/assets/133230032/bb6d152b-a2a8-4a04-b26b-a4e41e404cd8)
-5. Copie a chave gerada e substitua no código conforme necessário.
-   ![image](https://github.com/LucasS059/IA-GEMINI/assets/133230032/53e05edd-cebe-48c9-b48a-85fbc45dc8a6)
+5. Copie a chave gerada e substitua no código.
+   ![image](https://github.com/user-attachments/assets/613acca1-98f9-447d-87a1-4d26126c1b82)
 
 ---
 
